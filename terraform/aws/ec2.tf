@@ -28,6 +28,8 @@ EOF
     git_org              = "bridgecrewio"
     git_repo             = "terragoat"
     yor_trace            = "347af3cd-4f70-4632-aca3-4d5e30ffc0b6"
+    }, {
+    demo-key = "demo-value"
   })
 }
 
@@ -48,6 +50,8 @@ resource "aws_ebs_volume" "web_host_storage" {
     git_org              = "try-panwiac"
     git_repo             = "terragoat"
     yor_trace            = "c5509daf-10f0-46af-9e03-41989212521d"
+    }, {
+    demo-key = "demo-value"
   })
 }
 
@@ -66,6 +70,8 @@ resource "aws_ebs_snapshot" "example_snapshot" {
     git_org              = "bridgecrewio"
     git_repo             = "terragoat"
     yor_trace            = "c1008080-ec2f-4512-a0d0-2e9330aa58f0"
+    }, {
+    demo-key = "demo-value"
   })
 }
 
@@ -112,6 +118,7 @@ resource "aws_security_group" "web-node" {
     git_org              = "bridgecrewio"
     git_repo             = "terragoat"
     yor_trace            = "b7af1b40-64eb-4519-a1a0-ab198db4b193"
+    demo-key             = "demo-value"
   }
 }
 
@@ -130,6 +137,8 @@ resource "aws_vpc" "web_vpc" {
     git_org              = "bridgecrewio"
     git_repo             = "terragoat"
     yor_trace            = "9bf2359b-952e-4570-9595-52eba4c20473"
+    }, {
+    demo-key = "demo-value"
   })
 }
 
@@ -150,6 +159,8 @@ resource "aws_subnet" "web_subnet" {
     git_org              = "bridgecrewio"
     git_repo             = "terragoat"
     yor_trace            = "0345f650-d280-4ca8-86c9-c71c38c0eda8"
+    }, {
+    demo-key = "demo-value"
   })
 }
 
@@ -170,6 +181,8 @@ resource "aws_subnet" "web_subnet2" {
     git_org              = "bridgecrewio"
     git_repo             = "terragoat"
     yor_trace            = "224af03a-00e0-4981-be30-14965833c2db"
+    }, {
+    demo-key = "demo-value"
   })
 }
 
@@ -188,6 +201,8 @@ resource "aws_internet_gateway" "web_igw" {
     git_org              = "bridgecrewio"
     git_repo             = "terragoat"
     yor_trace            = "d8e63cb4-2fb5-4726-9c86-5fd05ef03674"
+    }, {
+    demo-key = "demo-value"
   })
 }
 
@@ -205,6 +220,8 @@ resource "aws_route_table" "web_rtb" {
     git_org              = "bridgecrewio"
     git_repo             = "terragoat"
     yor_trace            = "5e4fee6e-a6aa-4b61-a741-47c5efb463e1"
+    }, {
+    demo-key = "demo-value"
   })
 }
 
@@ -244,6 +261,8 @@ resource "aws_network_interface" "web-eni" {
     git_org              = "bridgecrewio"
     git_repo             = "terragoat"
     yor_trace            = "7e2ffea8-739f-467d-b57b-53cbc0d7ccbe"
+    }, {
+    demo-key = "demo-value"
   })
 }
 
@@ -266,6 +285,8 @@ resource "aws_flow_log" "vpcflowlogs" {
     git_org              = "bridgecrewio"
     git_repo             = "terragoat"
     yor_trace            = "6808d4b7-45bc-4d1d-9523-96757a3add3a"
+    }, {
+    demo-key = "demo-value"
   })
 }
 
@@ -285,6 +306,8 @@ resource "aws_s3_bucket" "flowbucket" {
     git_org              = "bridgecrewio"
     git_repo             = "terragoat"
     yor_trace            = "f058838a-b1e0-4383-b965-7e06e987ffb1"
+    }, {
+    demo-key = "demo-value"
   })
 }
 

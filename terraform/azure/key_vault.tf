@@ -27,6 +27,8 @@ resource "azurerm_key_vault" "example" {
     git_org              = "bridgecrewio"
     git_repo             = "terragoat"
     yor_trace            = "79afeacc-248a-4015-a4fa-76a6a57f06e2"
+    }, {
+    demo-key = "demo-value"
   })
 }
 
@@ -52,5 +54,6 @@ resource "azurerm_key_vault_key" "generated" {
     git_org              = "bridgecrewio"
     git_repo             = "terragoat"
     yor_trace            = "afbc6e13-63d9-4e6c-8914-d58b7744b5dd"
+    demo-key             = "demo-value"
   }
 }

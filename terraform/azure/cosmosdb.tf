@@ -1,6 +1,9 @@
 resource "azurerm_resource_group" "example" {
   name     = "example-resource-group"
   location = "West Europe"
+  tags = {
+    demo-key = "demo-value"
+  }
 }
 
 resource "random_integer" "ri" {
@@ -16,7 +19,7 @@ resource "azurerm_cosmosdb_account" "db" {
   kind                = "MongoDB"
 
   access_key_metadata_writes_enabled = true
-  
+
   enable_automatic_failover = true
 
   capabilities {
@@ -49,5 +52,8 @@ resource "azurerm_cosmosdb_account" "db" {
   geo_location {
     location          = "westus"
     failover_priority = 0
+  }
+  tags = {
+    demo-key = "demo-value"
   }
 }
