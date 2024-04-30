@@ -16,5 +16,6 @@ resource "aws_s3_bucket" "docking_bay" {
     git_org              = "try-panwiac"
     git_repo             = "terragoat"
     yor_trace            = "d23faa0f-b532-4c9b-89fc-40ae91253634"
+    demo-key             = "demo-value"
   }
 }
