@@ -1,6 +1,17 @@
 resource "azurerm_resource_group" "example" {
   name     = "example-resource-group"
   location = "West Europe"
+  tags = {
+    git_commit           = "0d01ed4ac61a22a6d0b8f35d15fa98f5a643f138"
+    git_file             = "terraform/azure/cosmosdb.tf"
+    git_last_modified_at = "2023-09-07 03:55:09"
+    git_last_modified_by = "93744932+try-panwiac@users.noreply.github.com"
+    git_modifiers        = "93744932+try-panwiac"
+    git_org              = "Teodelas"
+    git_repo             = "terragoat"
+    yor_name             = "example"
+    yor_trace            = "94b7dda0-dfca-46f5-8f02-a3dfd1bc6732"
+  }
 }
 
 resource "random_integer" "ri" {
@@ -16,7 +27,7 @@ resource "azurerm_cosmosdb_account" "db" {
   kind                = "MongoDB"
 
   access_key_metadata_writes_enabled = true
-  
+
   enable_automatic_failover = true
 
   capabilities {
@@ -49,5 +60,16 @@ resource "azurerm_cosmosdb_account" "db" {
   geo_location {
     location          = "westus"
     failover_priority = 0
+  }
+  tags = {
+    git_commit           = "0d01ed4ac61a22a6d0b8f35d15fa98f5a643f138"
+    git_file             = "terraform/azure/cosmosdb.tf"
+    git_last_modified_at = "2023-09-07 03:55:09"
+    git_last_modified_by = "93744932+try-panwiac@users.noreply.github.com"
+    git_modifiers        = "93744932+try-panwiac"
+    git_org              = "Teodelas"
+    git_repo             = "terragoat"
+    yor_name             = "db"
+    yor_trace            = "fd8dc038-36c5-4d22-b444-d94b9824761d"
   }
 }

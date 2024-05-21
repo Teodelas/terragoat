@@ -19,14 +19,16 @@ resource "azurerm_key_vault" "example" {
     environment = var.environment
     terragoat   = true
     }, {
-    git_commit           = "81738b80d571fa3034633690d13ffb460e1e7dea"
+    git_commit           = "5c6b5d60a8aa63a5d37e60f15185d13a967f0542"
     git_file             = "terraform/azure/key_vault.tf"
-    git_last_modified_at = "2020-06-19 21:14:50"
-    git_last_modified_by = "Adin.Ermie@outlook.com"
+    git_last_modified_at = "2021-05-02 10:06:10"
+    git_last_modified_by = "nimrodkor@users.noreply.github.com"
     git_modifiers        = "Adin.Ermie/nimrodkor"
-    git_org              = "bridgecrewio"
+    git_org              = "Teodelas"
     git_repo             = "terragoat"
     yor_trace            = "79afeacc-248a-4015-a4fa-76a6a57f06e2"
+    }, {
+    yor_name = "example"
   })
 }
 
@@ -44,13 +46,14 @@ resource "azurerm_key_vault_key" "generated" {
     "wrapKey",
   ]
   tags = {
-    git_commit           = "898d5beaec7ffdef6df0d7abecff407362e2a74e"
+    git_commit           = "5c6b5d60a8aa63a5d37e60f15185d13a967f0542"
     git_file             = "terraform/azure/key_vault.tf"
-    git_last_modified_at = "2020-06-17 12:59:55"
-    git_last_modified_by = "nimrodkor@gmail.com"
+    git_last_modified_at = "2021-05-02 10:06:10"
+    git_last_modified_by = "nimrodkor@users.noreply.github.com"
     git_modifiers        = "nimrodkor"
-    git_org              = "bridgecrewio"
+    git_org              = "Teodelas"
     git_repo             = "terragoat"
     yor_trace            = "afbc6e13-63d9-4e6c-8914-d58b7744b5dd"
+    yor_name             = "generated"
   }
 }

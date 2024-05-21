@@ -84,7 +84,17 @@ module "ec2_complete" {
     }
   ]
 
-  tags = local.tags
+  tags = merge(local.tags, {
+    git_commit           = "0962ba780180b500539b87067cbeb032716f9a3b"
+    git_file             = "tag_test/main.tf"
+    git_last_modified_at = "2023-05-09 08:01:25"
+    git_last_modified_by = "93744932+try-panwiac@users.noreply.github.com"
+    git_modifiers        = "93744932+try-panwiac"
+    git_org              = "Teodelas"
+    git_repo             = "terragoat"
+    yor_name             = "ec2_complete"
+    yor_trace            = "afa0e189-9dd3-48a4-957b-efdf86cacf0e"
+  })
 }
 
 module "ec2_network_interface" {
@@ -100,7 +110,17 @@ module "ec2_network_interface" {
     }
   ]
 
-  tags = local.tags
+  tags = merge(local.tags, {
+    git_commit           = "0962ba780180b500539b87067cbeb032716f9a3b"
+    git_file             = "tag_test/main.tf"
+    git_last_modified_at = "2023-05-09 08:01:25"
+    git_last_modified_by = "93744932+try-panwiac@users.noreply.github.com"
+    git_modifiers        = "93744932+try-panwiac"
+    git_org              = "Teodelas"
+    git_repo             = "terragoat"
+    yor_name             = "ec2_network_interface"
+    yor_trace            = "5cd3f556-2933-44a4-97d7-9ab2c6c69485"
+  })
 }
 
 module "ec2_metadata_options" {
@@ -118,7 +138,17 @@ module "ec2_metadata_options" {
     instance_metadata_tags      = "enabled"
   }
 
-  tags = local.tags
+  tags = merge(local.tags, {
+    git_commit           = "0962ba780180b500539b87067cbeb032716f9a3b"
+    git_file             = "tag_test/main.tf"
+    git_last_modified_at = "2023-05-09 08:01:25"
+    git_last_modified_by = "93744932+try-panwiac@users.noreply.github.com"
+    git_modifiers        = "93744932+try-panwiac"
+    git_org              = "Teodelas"
+    git_repo             = "terragoat"
+    yor_name             = "ec2_metadata_options"
+    yor_trace            = "5be52e12-9171-412d-aef4-5cbf07cce00f"
+  })
 }
 
 module "ec2_t2_unlimited" {
@@ -136,7 +166,17 @@ module "ec2_t2_unlimited" {
     auto_recovery = "default"
   }
 
-  tags = local.tags
+  tags = merge(local.tags, {
+    git_commit           = "0962ba780180b500539b87067cbeb032716f9a3b"
+    git_file             = "tag_test/main.tf"
+    git_last_modified_at = "2023-05-09 08:01:25"
+    git_last_modified_by = "93744932+try-panwiac@users.noreply.github.com"
+    git_modifiers        = "93744932+try-panwiac"
+    git_org              = "Teodelas"
+    git_repo             = "terragoat"
+    yor_name             = "ec2_t2_unlimited"
+    yor_trace            = "dd42bf17-b795-4db8-8656-8e60e024c4f5"
+  })
 }
 
 module "ec2_t3_unlimited" {
@@ -150,7 +190,17 @@ module "ec2_t3_unlimited" {
   vpc_security_group_ids      = [module.security_group.security_group_id]
   associate_public_ip_address = true
 
-  tags = local.tags
+  tags = merge(local.tags, {
+    git_commit           = "0962ba780180b500539b87067cbeb032716f9a3b"
+    git_file             = "tag_test/main.tf"
+    git_last_modified_at = "2023-05-09 08:01:25"
+    git_last_modified_by = "93744932+try-panwiac@users.noreply.github.com"
+    git_modifiers        = "93744932+try-panwiac"
+    git_org              = "Teodelas"
+    git_repo             = "terragoat"
+    yor_name             = "ec2_t3_unlimited"
+    yor_trace            = "feaac01c-6c89-4fb4-8d1c-7aa688b2a8f4"
+  })
 }
 
 
@@ -217,7 +267,17 @@ module "ec2_multiple" {
   enable_volume_tags = false
   root_block_device  = lookup(each.value, "root_block_device", [])
 
-  tags = local.tags
+  tags = merge(local.tags, {
+    git_commit           = "0962ba780180b500539b87067cbeb032716f9a3b"
+    git_file             = "tag_test/main.tf"
+    git_last_modified_at = "2023-05-09 08:01:25"
+    git_last_modified_by = "93744932+try-panwiac@users.noreply.github.com"
+    git_modifiers        = "93744932+try-panwiac"
+    git_org              = "Teodelas"
+    git_repo             = "terragoat"
+    yor_name             = "ec2_multiple"
+    yor_trace            = "c148e18f-6cab-453a-b5f0-2e5ca098279e"
+  })
 }
 
 ################################################################################
@@ -271,7 +331,17 @@ module "ec2_spot_instance" {
     }
   ]
 
-  tags = local.tags
+  tags = merge(local.tags, {
+    git_commit           = "0962ba780180b500539b87067cbeb032716f9a3b"
+    git_file             = "tag_test/main.tf"
+    git_last_modified_at = "2023-05-09 08:01:25"
+    git_last_modified_by = "93744932+try-panwiac@users.noreply.github.com"
+    git_modifiers        = "93744932+try-panwiac"
+    git_org              = "Teodelas"
+    git_repo             = "terragoat"
+    yor_name             = "ec2_spot_instance"
+    yor_trace            = "2b3911c5-f932-49d6-8ddc-db977f770146"
+  })
 }
 
 ################################################################################
@@ -295,7 +365,17 @@ module "ec2_open_capacity_reservation" {
     }
   }
 
-  tags = local.tags
+  tags = merge(local.tags, {
+    git_commit           = "0962ba780180b500539b87067cbeb032716f9a3b"
+    git_file             = "tag_test/main.tf"
+    git_last_modified_at = "2023-05-09 08:01:25"
+    git_last_modified_by = "93744932+try-panwiac@users.noreply.github.com"
+    git_modifiers        = "93744932+try-panwiac"
+    git_org              = "Teodelas"
+    git_repo             = "terragoat"
+    yor_name             = "ec2_open_capacity_reservation"
+    yor_trace            = "02e73c42-4aaa-49fa-8cd8-36b649ee47ef"
+  })
 }
 
 module "ec2_targeted_capacity_reservation" {
@@ -315,7 +395,17 @@ module "ec2_targeted_capacity_reservation" {
     }
   }
 
-  tags = local.tags
+  tags = merge(local.tags, {
+    git_commit           = "0962ba780180b500539b87067cbeb032716f9a3b"
+    git_file             = "tag_test/main.tf"
+    git_last_modified_at = "2023-05-09 08:01:25"
+    git_last_modified_by = "93744932+try-panwiac@users.noreply.github.com"
+    git_modifiers        = "93744932+try-panwiac"
+    git_org              = "Teodelas"
+    git_repo             = "terragoat"
+    yor_name             = "ec2_targeted_capacity_reservation"
+    yor_trace            = "939bbf0c-4407-40e1-a2ca-790b15a2f739"
+  })
 }
 
 resource "aws_ec2_capacity_reservation" "open" {
@@ -324,6 +414,17 @@ resource "aws_ec2_capacity_reservation" "open" {
   availability_zone       = "${local.region}a"
   instance_count          = 1
   instance_match_criteria = "open"
+  tags = {
+    git_commit           = "0962ba780180b500539b87067cbeb032716f9a3b"
+    git_file             = "tag_test/main.tf"
+    git_last_modified_at = "2023-05-09 08:01:25"
+    git_last_modified_by = "93744932+try-panwiac@users.noreply.github.com"
+    git_modifiers        = "93744932+try-panwiac"
+    git_org              = "Teodelas"
+    git_repo             = "terragoat"
+    yor_name             = "open"
+    yor_trace            = "b685d43f-8acb-4f5b-8129-3eef2042adcb"
+  }
 }
 
 resource "aws_ec2_capacity_reservation" "targeted" {
@@ -332,6 +433,17 @@ resource "aws_ec2_capacity_reservation" "targeted" {
   availability_zone       = "${local.region}a"
   instance_count          = 1
   instance_match_criteria = "targeted"
+  tags = {
+    git_commit           = "0962ba780180b500539b87067cbeb032716f9a3b"
+    git_file             = "tag_test/main.tf"
+    git_last_modified_at = "2023-05-09 08:01:25"
+    git_last_modified_by = "93744932+try-panwiac@users.noreply.github.com"
+    git_modifiers        = "93744932+try-panwiac"
+    git_org              = "Teodelas"
+    git_repo             = "terragoat"
+    yor_name             = "targeted"
+    yor_trace            = "f2233fad-1da3-4e7a-977c-afc60c1ad32a"
+  }
 }
 
 ################################################################################
@@ -349,7 +461,17 @@ module "vpc" {
   private_subnets = [for k, v in local.azs : cidrsubnet(local.vpc_cidr, 4, k)]
   public_subnets  = [for k, v in local.azs : cidrsubnet(local.vpc_cidr, 8, k + 48)]
 
-  tags = local.tags
+  tags = merge(local.tags, {
+    git_commit           = "0962ba780180b500539b87067cbeb032716f9a3b"
+    git_file             = "tag_test/main.tf"
+    git_last_modified_at = "2023-05-09 08:01:25"
+    git_last_modified_by = "93744932+try-panwiac@users.noreply.github.com"
+    git_modifiers        = "93744932+try-panwiac"
+    git_org              = "Teodelas"
+    git_repo             = "terragoat"
+    yor_name             = "vpc"
+    yor_trace            = "b2e46bff-9aa3-48f0-8aa5-30783a4e7453"
+  })
 }
 
 data "aws_ami" "amazon_linux" {
@@ -374,17 +496,60 @@ module "security_group" {
   ingress_rules       = ["http-80-tcp", "all-icmp"]
   egress_rules        = ["all-all"]
 
-  tags = local.tags
+  tags = merge(local.tags, {
+    git_commit           = "0962ba780180b500539b87067cbeb032716f9a3b"
+    git_file             = "tag_test/main.tf"
+    git_last_modified_at = "2023-05-09 08:01:25"
+    git_last_modified_by = "93744932+try-panwiac@users.noreply.github.com"
+    git_modifiers        = "93744932+try-panwiac"
+    git_org              = "Teodelas"
+    git_repo             = "terragoat"
+    yor_name             = "security_group"
+    yor_trace            = "56f5c070-628f-4761-9eba-cbaca64e9afa"
+  })
 }
 
 resource "aws_placement_group" "web" {
   name     = local.name
   strategy = "cluster"
+  tags = {
+    git_commit           = "0962ba780180b500539b87067cbeb032716f9a3b"
+    git_file             = "tag_test/main.tf"
+    git_last_modified_at = "2023-05-09 08:01:25"
+    git_last_modified_by = "93744932+try-panwiac@users.noreply.github.com"
+    git_modifiers        = "93744932+try-panwiac"
+    git_org              = "Teodelas"
+    git_repo             = "terragoat"
+    yor_name             = "web"
+    yor_trace            = "5ead7d3d-895b-4437-8c85-49046ebe858d"
+  }
 }
 
 resource "aws_kms_key" "this" {
+  tags = {
+    git_commit           = "0962ba780180b500539b87067cbeb032716f9a3b"
+    git_file             = "tag_test/main.tf"
+    git_last_modified_at = "2023-05-09 08:01:25"
+    git_last_modified_by = "93744932+try-panwiac@users.noreply.github.com"
+    git_modifiers        = "93744932+try-panwiac"
+    git_org              = "Teodelas"
+    git_repo             = "terragoat"
+    yor_name             = "this"
+    yor_trace            = "8a3b204e-8705-44f5-bc92-1a6c221ea8bb"
+  }
 }
 
 resource "aws_network_interface" "this" {
   subnet_id = element(module.vpc.private_subnets, 0)
+  tags = {
+    git_commit           = "0962ba780180b500539b87067cbeb032716f9a3b"
+    git_file             = "tag_test/main.tf"
+    git_last_modified_at = "2023-05-09 08:01:25"
+    git_last_modified_by = "93744932+try-panwiac@users.noreply.github.com"
+    git_modifiers        = "93744932+try-panwiac"
+    git_org              = "Teodelas"
+    git_repo             = "terragoat"
+    yor_name             = "this"
+    yor_trace            = "d55964ed-5c5f-47b9-923a-d00b5e7e3d08"
+  }
 }
