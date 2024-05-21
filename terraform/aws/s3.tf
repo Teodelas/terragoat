@@ -139,5 +139,15 @@ resource "aws_s3_bucket" "logs" {
   tags = merge({
     Name        = "${local.resource_prefix.value}-logs"
     Environment = local.resource_prefix.value
-    })
+    }, {
+    git_commit           = "54335be37495280027cde46ce04223830d367230"
+    git_file             = "terraform/aws/s3.tf"
+    git_last_modified_at = "2024-05-21 23:49:21"
+    git_last_modified_by = "teodelas@outlook.com"
+    git_modifiers        = "jonjozwiak/nimrodkor/schosterbarak/teodelas"
+    git_org              = "Teodelas"
+    git_repo             = "terragoat"
+    yor_name             = "logs"
+    yor_trace            = "fe057ecd-38fc-41c8-a737-f43f0c8fcc7f"
+  })
 }
