@@ -140,11 +140,11 @@ resource "aws_s3_bucket" "logs" {
     Name        = "${local.resource_prefix.value}-logs"
     Environment = local.resource_prefix.value
     }, {
-    git_commit           = "54335be37495280027cde46ce04223830d367230"
+    git_commit           = "5c6b5d60a8aa63a5d37e60f15185d13a967f0542"
     git_file             = "terraform/aws/s3.tf"
-    git_last_modified_at = "2024-05-21 23:49:21"
-    git_last_modified_by = "teodelas@outlook.com"
-    git_modifiers        = "jonjozwiak/nimrodkor/schosterbarak/teodelas"
+    git_last_modified_at = "2021-05-02 10:06:10"
+    git_last_modified_by = "nimrodkor@users.noreply.github.com"
+    git_modifiers        = "jonjozwiak/nimrodkor/schosterbarak"
     git_org              = "Teodelas"
     git_repo             = "terragoat"
     yor_name             = "logs"
